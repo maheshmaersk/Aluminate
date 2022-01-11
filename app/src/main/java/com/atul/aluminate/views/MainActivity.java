@@ -1,4 +1,4 @@
-package com.atul.aluminate;
+package com.atul.aluminate.views;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.atul.aluminate.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.iammert.library.readablebottombar.ReadableBottomBar;
 import com.atul.aluminate.Fragment.AddPostFragment;

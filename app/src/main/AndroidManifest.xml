@@ -9,20 +9,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aluminate">
-        <activity android:name="com.atul.aluminate.CommentActivity"></activity>
-        <activity android:name="com.atul.aluminate.SignUpActivity" />
-        <activity android:name="com.atul.aluminate.LoginActivity">
+        <activity android:name="com.atul.aluminate.views.CommentActivity"></activity>
+        <activity android:name="com.atul.aluminate.views.SignUpActivity" />
+        <activity android:name="com.atul.aluminate.views.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.atul.aluminate.MainActivity" />
+        <activity android:name="com.atul.aluminate.views.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".payments.CheckoutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".payments.PaymentTransparentActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@style/Transparent" />
+
+        <!-- Enabling this flag is required in order to use the PaymentsClient -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <service
+            android:name=".payments.services.PaymentNotificationIntentService"
+            android:enabled="true"
+            android:icon="@drawable/googlepay_button_overlay"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

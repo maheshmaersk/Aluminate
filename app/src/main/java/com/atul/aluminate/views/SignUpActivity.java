@@ -1,4 +1,4 @@
-package com.atul.aluminate;
+package com.atul.aluminate.views;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

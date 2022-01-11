@@ -15,7 +15,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.atul.aluminate.CommentActivity;
+import com.atul.aluminate.views.CommentActivity;
 import com.atul.aluminate.Model.Notification;
 import com.atul.aluminate.Model.Post;
 import com.atul.aluminate.Model.User;

@@ -17,4 +17,5 @@
     <color name="orange">#FF9800</color>
     <color name="green">#17a08b</color>
     <color name="lightGreen">#ECF8F6</color>
+    <color name="price_button_grey">#555</color>
 </resources>
